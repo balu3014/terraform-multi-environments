@@ -25,4 +25,5 @@
 
 * Compact Warnings: If you want to reduce verbosity in warnings, you can use the -compact-warnings option, but this does not address the root cause of the issue.
 
+# Compact Warnings
 * terraform apply -var-file="Dev-env/dev.tfvars" -compact-warnings
