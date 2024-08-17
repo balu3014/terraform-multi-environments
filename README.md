@@ -25,6 +25,11 @@
 *      terraform apply -var-file=Dev-env/dev.tfvars
 *      terraform destroy -var-file=Dev-env/dev.tfvars
 
+# ####Note#####
+* terraform init -reconfigure will  play a major role is '.tfvars'.
+* if we won't use the "-reconfigure" it may cause to destroy different environment resources.
+* where .tfvars will manatain single "state.file" for both the environments.
+
 * Compact Warnings: If you want to reduce verbosity in warnings, you can use the -compact-warnings option, but this does not address the root cause of the issue.
 
 # Compact Warnings  command
