@@ -1,10 +1,16 @@
 variable "instance_names" {
   type = map(string)
   default = {
-    db = "t3.micro"
-    backend = "t2.micro"
-    frontend = "t2.micro"
+    # db-dev = "t3.micro"
+    # backend-dev = "t2.micro"
+    # frontend-dev = "t2.micro"
   }
+}
+
+
+variable "environment" {
+  # default = "dev"
+  
 }
    variable "common_tags"{
     type = map
