@@ -5,7 +5,7 @@
   Configuration to be merged with what is in the configuration file's 'backend' block. This can be either a path to an HCL file with key/value assignments (same format as terraform.tfvars) or a'key=value' format and can be specified multiple times. The backend type must be in the configurationitself.
 
 
-# commands        terraform-commands
+# Prod        Terraform-commands
 *                  terraform init -help
 *                  terraform init -backend-config=Prod-env/backend.tf
 *                  terraform validate -var-file=Prod-env/prod.tfvars
@@ -15,7 +15,7 @@
 
 
 
-# commands          terraform-commands
+# Dev          Terraform-commands
 *                    terraform init -help
 *                    terraform init -backend-config=Dev-env/backend.tf
 *                    terraform validate -var-file=Dev-env/dev.tfvars
