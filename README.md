@@ -6,24 +6,24 @@
 
 
 # Prod Terraform-commands
-*   terraform init -help
-*   terraform init -reconfigure -backend-config=Prod-env/backend.tf
-*   terraform init -backend-config=Prod-env/backend.tf
-*   terraform validate -var-file=Prod-env/prod.tfvars
-*   terraform plan -var-file=Prod-env/prod.tfvars
-*   terraform apply -var-file=Prod-env/prod.tfvars
-*   terraform destroy -var-file=Prod-env/prod.tfvars
+*      terraform init -help
+*      terraform init -reconfigure -backend-config=Prod-env/backend.tf
+*      terraform init -backend-config=Prod-env/backend.tf
+*      terraform validate -var-file=Prod-env/prod.tfvars
+*      terraform plan -var-file=Prod-env/prod.tfvars
+*      terraform apply -var-file=Prod-env/prod.tfvars
+*      terraform destroy -var-file=Prod-env/prod.tfvars
 
 
 
 # Dev  Terraform-commands
-*   terraform init -help
-*   terraform init -reconfigure -backend-config=Prod-env/backend.tf
-*   terraform init -backend-config=Dev-env/backend.tf
-*   terraform validate -var-file=Dev-env/dev.tfvars
-*   terraform plan -var-file=Dev-env/dev.tfvars
-*   terraform apply -var-file=Dev-env/dev.tfvars
-*   terraform destroy -var-file=Dev-env/dev.tfvars
+*      terraform init -help
+*      terraform init -reconfigure -backend-config=Prod-env/backend.tf
+*      terraform init -backend-config=Dev-env/backend.tf
+*      terraform validate -var-file=Dev-env/dev.tfvars
+*      terraform plan -var-file=Dev-env/dev.tfvars
+*      terraform apply -var-file=Dev-env/dev.tfvars
+*      terraform destroy -var-file=Dev-env/dev.tfvars
 
 * Compact Warnings: If you want to reduce verbosity in warnings, you can use the -compact-warnings option, but this does not address the root cause of the issue.
 
