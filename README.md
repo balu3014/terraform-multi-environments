@@ -1,5 +1,6 @@
 # terraform-multi-environments
 
+# tfvars
 
 #  -backend-config=path  
   Configuration to be merged with what is in the configuration file's 'backend' block. This can be either a path to an HCL file with key/value assignments (same format as terraform.tfvars) or a'key=value' format and can be specified multiple times. The backend type must be in the configurationitself.
@@ -34,3 +35,19 @@
 
 # Compact Warnings  command
 *                   terraform apply -var-file="Dev-env/dev.tfvars" -compact-warnings
+
+# WORKSPACE commands
+*           terraform workspace new [</spacename>]
+*           terraform workspace list [</spacename>]
+*           terraform workspace select [</spacename>]
+*           terraform workspace show [</spacename>]
+*           terraform workspace delete [</spacename>]     
+
+# Note
+* workspace will use the single s3 bucket and it will maintain 2 sub-folder inside the s3 bucket envirnoment wise 
+* workspace will maintain the different state-file for each environment 
+
+# lookup function 
+* ex:    lookup(map, key, default)
+*        lookup(var.instance_type,terraform.workspace)
+* "terrform.workspace" actually show the value of our path if we are in dev-env it will implement in dev-server if we are in prod-env it will implement in prod-servers
