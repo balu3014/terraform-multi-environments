@@ -29,7 +29,10 @@
 # ####Note#####
 * terraform init -reconfigure will  play a major role is '.tfvars'.
 * if we won't use the "-reconfigure" it may cause to destroy different environment resources.
-* where .tfvars will manatain single "state.file" for both the environments.
+* where .tfvars will manatain single "state.file" for both the environments 
+
+  #Best Practicese#
+*  Use separate Git branches for each environment to isolate changes, maintain stability, and manage environment-specific configurations efficiently.
 
 * Compact Warnings: If you want to reduce verbosity in warnings, you can use the -compact-warnings option, but this does not address the root cause of the issue.
 
