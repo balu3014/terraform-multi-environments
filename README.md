@@ -33,10 +33,10 @@
 
   # Best Practicese#
 *  Use separate Git branches for each environment to isolate changes, maintain stability, and manage environment-specific configurations efficiently.
-
+*  
+# Compact Warnings  command
 * Compact Warnings: If you want to reduce verbosity in warnings, you can use the -compact-warnings option, but this does not address the root cause of the issue.
 
-# Compact Warnings  command
 *                   terraform apply -var-file="Dev-env/dev.tfvars" -compact-warnings
 
 # WORKSPACE commands
@@ -48,9 +48,10 @@
 
 # Note
 * workspace will use the single s3 bucket and it will maintain 2 sub-folder inside the s3 bucket envirnoment wise 
-* workspace will maintain the different state-file for each environment 
+* workspace will maintain the different state-file for each environment .
+* "terrform.workspace" actually show the value of our path if we are in dev-env it will implement in dev-server if we are in prod-env it will implement in prod-servers
 
 # lookup function 
 * ex:    lookup(map, key, default)
 *        lookup(var.instance_type,terraform.workspace)
-* "terrform.workspace" actually show the value of our path if we are in dev-env it will implement in dev-server if we are in prod-env it will implement in prod-servers
+
